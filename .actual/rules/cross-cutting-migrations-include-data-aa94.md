@@ -39,5 +39,5 @@ php artisan migrate:status
 - `php artisan migrate:status` executes successfully without errors
 
 <enforcement>
-Claude Code MUST NOT skip or defer verification of migration file structure, naming conventions, and method presence. All verification commands MUST execute successfully before accepting migration files as compliant.
+Claude Code MUST NOT skip or defer verification. All migration files MUST be validated against naming conventions, class structure, and method presence before acceptance. CI pipeline checks and code review processes are mandatory enforcement gates.
 </enforcement>
